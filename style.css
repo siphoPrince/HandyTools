@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+}
+.nav-container nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding-right: 5%;
+}
+
+li {
+  padding-right: 15px;
+  cursor: pointer;
+}
+.line {
+  padding: 0.1%;
+  background-color: rgba(255, 255, 255, 0.329);
+  margin: 1%;
+}
+
+.header {
+  margin: 1em;
+  padding: 1%;
+  background-color: hsla(120, 40%, 84%, 0.274);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  margin: 5em;
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/007/140/445/small/construction-tools-for-repair-on-wooden-background-flat-template-illustration-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  color: hsla(120, 75%, 25%, 0.815);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  border-radius: 20px; /* Match the border-radius of the hero */
+}
+
+.hero-text {
+  position: relative; /* To place it above the overlay */
+  z-index: 1;
+  color: white; /* Ensure the text color contrasts with the overlay */
+}
+
+.Columns-containers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 1em; /* Adds space between columns if needed */
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  border: solid;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 200px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col-headers {
+  margin-bottom: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
