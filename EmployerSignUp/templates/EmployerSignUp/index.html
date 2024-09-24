@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign-up</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'EmployerSignIn/style.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+       <div class="container">
+            <div>
+                <h2>Sign Up<h2>
+            </div>
+            <p>Sign Up For your Employer account</p>
+
+            <form>
+                <lable>First Name</lable>
+                <div>
+                    <input placeholder='Enter name'>
+                </div>
+
+                <lable>Last Name</lable>
+                <div>
+                    <input placeholder='Last name'>
+                </div>
+
+                <lable for='email'>Email</lable>
+                <div class="email">
+                    <input id='email' type=email placeholder='Enter Email' required>
+                </div>
+
+                <lable for='password'>Password</lable>
+                <div class"password">
+                    <input id='password' type=password placeholder='Enter password' required>
+                </div>
+
+                <lable for='Re-password'>Password Again</lable>
+                <div class"Re-password">
+                    <input id='Re-password' type=password placeholder='RE-Enter password' required>
+                </div>
+
+                <button>Sign Up</button>
+                <p>Already have a account? <a href="{% url 'EmployerSignIn:index' %}">Sign In</a>
+              
+            </form>
+       </div>         
+    </body>
+</html>

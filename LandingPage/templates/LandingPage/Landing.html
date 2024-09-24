@@ -1,0 +1,46 @@
+{% extends 'LandingPage/layout.html' %}
+{% load static %}
+
+{% block title %}Landing{% endblock %}
+
+{% block content %}
+<div class="header">
+    <h2>Handy Tools</h2>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li><a href="{% url 'EmployerSignIn:index' %}">Create/Login</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="Heading"> 
+    <h4>Looking For Servies?</h4>
+  </div>
+
+  <div class="GetStarted-Button">
+    <button><a href="{% url 'Logins:index' %}"> Get Started </a> </button>
+  </div>
+
+  <div class="Pagination">
+    <div class="PreviousSection">
+      <
+    </div>
+  
+    <div class="pagination-section">
+      <section>image<section>
+    </div>
+  
+    <div class="NextSection">
+      <
+    </div>
+  </div>
+  
+  
+    <footer>
+        <p>&copy; 2024 Handy Tools. All rights reserved.</p>
+      </footer>
+        
+{% endblock %}

@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin-bottom: 60px; /* Adjusted to prevent footer overlap */
+    
+}
+
+.header {
+    margin: 1em;
+    padding: 1%;
+    background-color: hsla(120, 40%, 84%, 0.274);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container nav ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding-right: 5%;
+}
+
+li {
+    padding-right: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.line {
+    padding: 0.1%;
+    background-color: rgba(255, 255, 255, 0.329);
+    margin: 1%;
+}
+
+.Heading {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.Heading h4 {
+    color: black;
+}
+
+.GetStarted-Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;  
+}
+
+.GetStarted-Button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.GetStarted-Button button:hover {
+    background-color: #45a049;
+}
+
+.pagination-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.content-section {
+    display: none;
+}

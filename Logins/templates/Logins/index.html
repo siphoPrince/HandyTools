@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'Logins/style.css' %}" rel="stylesheet" />
+    <title>Accounts</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Sign in As..</p>
+        <div class="col1">
+            <button><a href="{% url 'EmployerSignIn:index'%}">Sign in as Employer</a> </button>
+        </div>
+
+        <div class="col2">
+            <button> <a href"{% url 'EmployerSignIn:index' %}">Sign in as individual</a> </button>
+        </div>
+    </div>
+</body>
+</html>
